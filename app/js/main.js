@@ -2,12 +2,16 @@
 const db = firebase.firestore();
 
 const input = document.querySelector(".input");
+
 let answerPending = false;
 
 input.addEventListener("keyup", (event) => {
   clearMessage();
 
   if (event.key === "Enter") {
+    document.activeElement.blur();
+
+    clearInput();
     logToDB(input.value);
     checkAnswer(input.dataset.queryId, input.value);
 
@@ -67,4 +71,13 @@ function setMessage(message) {
 
 function clearMessage() {
   setMessage("");
+}
+
+function clearInput() {
+  input.classList.add("clearing");
+
+  setTimeout(function () {
+    input.value = "";
+    input.classList.remove("clearing");
+  }, 250);
 }

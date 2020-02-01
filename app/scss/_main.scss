@@ -12,43 +12,53 @@ body {
     padding: 24px 16px;
 
     img {
-      width: 200px;
+      margin: 0 0 32px;
       max-width: 80vw;
+      width: 200px;
     }
 
     .input-wrapper {
-      max-width: 80vw;
-      margin: 48px 0;
-      padding: 3px;
       border-radius: 8px;
-      border: 2px solid transparent;
+      border: 2px solid #fff;
+      margin: 48px 0;
+      margin: 5px;
+      max-width: 80vw;
+      padding: 0;
+      transition: all .25s ease-in-out;
 
       &:focus-within {
-        border: 2px solid #fff;
+        margin: 0;
+        padding: 5px;
       }
 
       input {
         border-radius: 5px;
         border: 0;
+        box-sizing: border-box;
+        cursor: text;
         font-family: 'Special Elite', monospace;
         font-size: 1rem;
-        width: 100%;
-        cursor: text;
         padding: 8px 16px;
-        box-sizing: border-box;
+        transition: color .25s ease-in-out;
+        width: 100%;
 
         &:focus {
           outline: none;
+        }
+
+        &.clearing {
+          color: transparent;
         }
       }
     }
 
     .message-wrapper {
+      margin: 32px 0;
       max-width: 80vw;
 
       p {
-        font-family: 'Special Elite', monospace;
         color: #fff;
+        font-family: 'Special Elite', monospace;
       }
     }
   }

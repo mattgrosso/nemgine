@@ -57,29 +57,37 @@ body {
     justify-content: center;
     padding: 24px 16px; }
     body main img {
-      width: 200px;
-      max-width: 80vw; }
-    body main .input-wrapper {
+      margin: 0 0 32px;
       max-width: 80vw;
-      margin: 48px 0;
-      padding: 3px;
+      width: 200px; }
+    body main .input-wrapper {
       border-radius: 8px;
-      border: 2px solid transparent; }
+      border: 2px solid #fff;
+      margin: 48px 0;
+      margin: 5px;
+      max-width: 80vw;
+      padding: 0;
+      transition: all .25s ease-in-out; }
       body main .input-wrapper:focus-within {
-        border: 2px solid #fff; }
+        margin: 0;
+        padding: 5px; }
       body main .input-wrapper input {
         border-radius: 5px;
         border: 0;
+        box-sizing: border-box;
+        cursor: text;
         font-family: 'Special Elite', monospace;
         font-size: 1rem;
-        width: 100%;
-        cursor: text;
         padding: 8px 16px;
-        box-sizing: border-box; }
+        transition: color .25s ease-in-out;
+        width: 100%; }
         body main .input-wrapper input:focus {
           outline: none; }
+        body main .input-wrapper input.clearing {
+          color: transparent; }
     body main .message-wrapper {
+      margin: 32px 0;
       max-width: 80vw; }
       body main .message-wrapper p {
-        font-family: 'Special Elite', monospace;
-        color: #fff; }
+        color: #fff;
+        font-family: 'Special Elite', monospace; }
