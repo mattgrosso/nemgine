@@ -1,0 +1,85 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  align-items: center;
+  background-color: #000;
+  display: flex;
+  justify-content: center; }
+  body main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 24px 16px; }
+    body main img {
+      width: 200px;
+      max-width: 80vw; }
+    body main .input-wrapper {
+      max-width: 80vw;
+      margin: 48px 0;
+      padding: 3px;
+      border-radius: 8px;
+      border: 2px solid transparent; }
+      body main .input-wrapper:focus-within {
+        border: 2px solid #fff; }
+      body main .input-wrapper input {
+        border-radius: 5px;
+        border: 0;
+        font-family: 'Special Elite', monospace;
+        font-size: 1rem;
+        width: 100%;
+        cursor: text;
+        padding: 8px 16px;
+        box-sizing: border-box; }
+        body main .input-wrapper input:focus {
+          outline: none; }
+    body main .message-wrapper {
+      max-width: 80vw; }
+      body main .message-wrapper p {
+        font-family: 'Special Elite', monospace;
+        color: #fff; }
