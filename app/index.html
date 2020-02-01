@@ -10,13 +10,36 @@
   <body>
     <main>
       <img src="/images/enigmark2Cropped.jpg" alt="Enigmark">
+
       <div class="input-wrapper">
-        <input type="text" name="response" value="">
+        <input class="input" type="text" name="response" value="">
       </div>
       <div class="message-wrapper">
         <p></p>
       </div>
     </main>
+
+    <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-firestore.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyD5iFrmFVZEx8_U8W4KdjabkdKsAYXDa8I",
+        authDomain: "enigmen-5d590.firebaseapp.com",
+        databaseURL: "https://enigmen-5d590.firebaseio.com",
+        projectId: "enigmen-5d590",
+        storageBucket: "enigmen-5d590.appspot.com",
+        messagingSenderId: "231450781557",
+        appId: "1:231450781557:web:ddc3b33279a864cc0c553c",
+        measurementId: "G-LK6HZXT7EP"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+
     <script type="module" src="/js/main.js"></script>
   </body>
 </html>
